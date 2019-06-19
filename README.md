@@ -11,11 +11,11 @@ Associated challenge arxiv paper: https://arxiv.org/abs/1808.01694
 
 The code for the challenge submission is also available here: https://github.com/ngessert/isic2018
 
-# Patch-based attention
+### Patch-based attention
 
 If you are only interested in patch-based attention, go to models_custom.py.
 
-# Dataset Preparation
+### Dataset Preparation
 
 The HAM10000 dataset is available here: https://isic-archive.com/
 
@@ -27,15 +27,15 @@ Use gen_sevenpoint.py to convert the downloaded dataset to our format. Put the r
 
 In terms of train/val/test split, use the indices_tbe.pkl file for HAM10000 and indices_sp.pkl for the sevenpoint dataset.
 
-# Configuration
+### Configuration
 
 You can find example configs in /cfgs/. You can vary the parameters in these files. This includes balancing strategies, data input strategies and different models (see paper for details).
 
-# Training
+### Training
 
 To train a model, run: `python train.py linux example_densenet_sevenpoint gpu0`
 
-# Evaluation
+### Evaluation
 
 To evaluate a model, run: `python eval.py linux example_densenet_sevenpoint multiorder5 average $HOME/data/isic/example_densenet_sevenpoint lastgpu0` 
 
